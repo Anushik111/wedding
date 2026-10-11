@@ -1,27 +1,699 @@
+
 <!DOCTYPE html>
-<html lang="hy"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Narek & Anna | Wedding Invitation</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Marck+Script&family=Noto+Serif+Armenian:wght@400;500;600&display=swap" rel="stylesheet">
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f3ed">
+<title>Evento | Թվային հարսանյաց հրավիրատոմս</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Serif+Armenian:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-:root{--paper:#faf6f0;--cream:#f4eee7;--ink:#44352d;--rose:#bd8b7e;--gold:#b89a7c;--muted:#78675d;--line:#ddcfc2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Noto Serif Armenian',serif;line-height:1.8}a{color:inherit;text-decoration:none}.topbar{position:absolute;z-index:5;top:0;left:0;width:100%;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;color:#fff}.logo{font:27px 'Marck Script',cursive}.nav{display:flex;gap:25px;font:11px 'Cormorant Garamond',serif;letter-spacing:1.7px;text-transform:uppercase}.nav a{border-bottom:1px solid transparent}.nav a:hover{border-color:#fff}.hero{min-height:650px;height:78vh;max-height:850px;position:relative;display:flex;align-items:center;overflow:hidden;background:#8d7b6d}.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,242,230,.96) 0%,rgba(250,242,230,.82) 31%,rgba(80,55,42,.05) 64%),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=90') center 44%/cover}.hero-content{position:relative;z-index:2;padding:95px 0 70px 11%;max-width:610px}.eyebrow,.kicker{font:11px 'Cormorant Garamond',serif;letter-spacing:3.5px;color:#9c7862;text-transform:uppercase}.hero h1{font:clamp(54px,7vw,90px)/.95 'Cormorant Garamond',serif;font-weight:400;margin:20px 0 22px;letter-spacing:-1px}.hero p{font-size:12px;line-height:2;color:#5e4c42;max-width:330px}.date{font:19px 'Cormorant Garamond',serif;letter-spacing:5px;margin:26px 0}.button{display:inline-block;border:1px solid #a9866c;border-radius:40px;padding:8px 25px;font-size:12px;transition:.25s}.button:hover{background:#a9866c;color:white}.hero-note{position:absolute;z-index:2;right:8%;bottom:24%;font:26px 'Marck Script',cursive;color:white;transform:rotate(-8deg);text-shadow:0 1px 8px #4c382d}.scroll{position:absolute;right:5%;bottom:35px;z-index:2;border:1px solid #fff9;border-radius:50%;width:38px;height:38px;color:white;text-align:center;line-height:36px}.petal{position:absolute;z-index:2;left:0;top:0;width:155px;height:220px;pointer-events:none;background:linear-gradient(90deg,rgba(250,246,240,.02),rgba(250,246,240,0)),url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=85') 48% center/cover;opacity:.42;mix-blend-mode:multiply;clip-path:polygon(0 0,100% 0,72% 45%,100% 100%,0 75%)} 
-.side-florals{position:absolute;pointer-events:none;z-index:1;width:145px;height:290px;opacity:.42;background:url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=85') center/cover;mix-blend-mode:multiply;mask-image:linear-gradient(to right,black,transparent)}
-.story-section{overflow:hidden}.story-section:before{content:'';position:absolute;left:-60px;bottom:-30px;width:180px;height:260px;background:url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=85') center/cover;opacity:.22;mix-blend-mode:multiply;mask-image:linear-gradient(90deg,black,transparent)}
-.schedule{position:relative;overflow:hidden}.schedule:before{content:'';position:absolute;left:0;top:0;width:120px;height:100%;background:linear-gradient(90deg,#f4eee7aa,transparent),url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=85') 35% center/cover;opacity:.25;mix-blend-mode:multiply}
-.dress{position:relative;overflow:hidden}.dress:after{content:'';position:absolute;right:-20px;bottom:-20px;width:150px;height:220px;background:url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=85') 60% center/cover;opacity:.24;mix-blend-mode:multiply;mask-image:linear-gradient(270deg,black,transparent);pointer-events:none}.section{padding:65px 8%;position:relative}.inner{max-width:1120px;margin:auto}.story{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;min-height:300px}.story p,.dress p,.rsvp p{font-size:12px;color:var(--muted);line-height:2.05}.script{font:30px 'Marck Script',cursive;color:#9d7662}.story-art{position:relative;min-height:275px;display:flex;justify-content:center;align-items:center}.story-art:before{content:"";position:absolute;width:76%;height:88%;background:#e6d9e9;opacity:.65;border-radius:45% 55% 44% 56%;transform:rotate(-12deg)}.story-art img{position:relative;width:56%;height:255px;object-fit:cover;padding:8px;background:white;box-shadow:0 10px 28px #65504220;transform:rotate(-5deg)}.story-art .flower{position:absolute;right:0;bottom:-8px;width:95px;height:150px;z-index:2;background:url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=400&q=85') 70% center/cover;opacity:.55;mix-blend-mode:multiply;mask-image:linear-gradient(270deg,black,transparent)}.hand-note{position:absolute;right:0;top:45%;font:22px 'Marck Script',cursive;transform:rotate(-8deg);color:#78675d}.divider{height:1px;background:#e9dfd5;max-width:1200px;margin:auto}.schedule{background:linear-gradient(90deg,rgba(244,238,231,.92),rgba(244,238,231,.78)),url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1400&q=80') center/cover}.schedule-layout{display:grid;grid-template-columns:1fr 210px;gap:30px;align-items:center}.schedule-photo{height:260px;border-radius:120px 120px 0 0;overflow:hidden}.schedule-photo img{width:100%;height:100%;object-fit:cover}.timeline{display:grid;grid-template-columns:repeat(3,1fr);margin-top:25px}.event{text-align:center;padding:10px 18px;border-right:1px solid var(--line)}.event:last-child{border:0}.icon{font-size:26px;color:var(--gold)}.time{font:21px 'Cormorant Garamond',serif;color:#a98265}.event h3{font-size:12px;font-weight:500;margin:5px 0}.event p{font-size:10px;color:var(--muted);margin:0}.dress{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;background:#f8f2ed}.dress-quote{padding:25px;background:linear-gradient(120deg,#e7dce5,#f8eee6);text-align:center;font-size:13px;color:#6e5a51}.swatches{display:flex;gap:11px;margin-top:20px}.swatch{width:28px;height:28px;border-radius:50%;box-shadow:0 0 0 3px #fff}.gallery-row{display:grid;grid-template-columns:1fr 1.4fr;gap:35px;align-items:center}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.gallery img{width:100%;height:105px;object-fit:cover;border-radius:3px;display:block}.gallery a{transition:.2s}.gallery a:hover{transform:translateY(-3px)}.gallery-count{text-align:center;font:12px 'Cormorant Garamond',serif;color:#987963;letter-spacing:3px;margin-top:10px}.rsvp{background:linear-gradient(90deg,#eadde2dd,#f4e8e4bb),url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1800&q=85') center/cover}.rsvp-inner{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.rsvp h2{font-size:38px}footer{text-align:center;padding:22px;font:22px 'Marck Script',cursive;color:#9d7662}.music{position:fixed;right:20px;bottom:20px;z-index:8;width:46px;height:46px;border:1px solid #b89a7c;border-radius:50%;background:#faf6f0;color:#7d5f4d;font-size:20px;cursor:pointer;box-shadow:0 4px 15px #0002}.music.playing{background:#b98479;color:white}
-h2{font:400 clamp(30px,4vw,42px)/1.2 'Cormorant Garamond','Noto Serif Armenian',serif;margin:8px 0 17px}.center{text-align:center}
-@media(max-width:700px){.petal{width:95px;height:150px;opacity:.3}.story-section:before{width:90px;height:160px}.schedule:before{width:60px}.dress:after{width:85px;height:150px}.topbar{padding:17px 5%}.logo{font-size:22px}.nav{gap:10px;font-size:9px}.nav a:nth-child(2),.nav a:nth-child(4){display:none}.hero{height:85vh;min-height:610px}.hero-bg{background:linear-gradient(90deg,rgba(250,242,230,.94),rgba(250,242,230,.68) 48%,rgba(60,40,30,.05)),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85') 58% center/cover}.hero-content{padding:95px 7% 60px}.hero h1{font-size:64px}.hero-note{right:5%;bottom:15%;font-size:21px}.petal{font-size:65px}.section{padding:48px 7%}.story,.dress,.gallery-row,.rsvp-inner,.schedule-layout{grid-template-columns:1fr;gap:25px}.story-art{min-height:260px}.story-art img{height:235px}.hand-note{right:3%}.schedule-photo{display:none}.timeline{grid-template-columns:1fr;margin-top:20px}.event{border-right:0;border-bottom:1px solid var(--line);padding:15px}.event:last-child{border:0}.dress-quote{order:2}.gallery{gap:7px}.gallery img{height:95px}.rsvp h2{font-size:32px}}
-</style></head><body>
-<header class="topbar"><a class="logo" href="#home">Narek & Anna ♥</a><nav class="nav"><a href="#home">Home</a><a href="#story">Our story</a><a href="#details">Details</a><a href="#gallery">Gallery</a><a href="#rsvp">RSVP</a><a href="#rsvp">♡</a></nav></header>
+:root{
+  --bg:#f8f4ee;
+  --paper:#fffdf8;
+  --ink:#55473d;
+  --muted:#8f7c6d;
+  --gold:#b59a70;
+  --line:#dfd1bf;
+  --dark:#3d332d;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--bg);
+  font-family:"Noto Serif Armenian",serif;
+  overflow-x:hidden;
+}
+button,a{font:inherit;-webkit-tap-highlight-color:transparent}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+img{max-width:100%}
+
+.topbar{
+  position:absolute;
+  z-index:5;
+  top:0;left:0;right:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:24px clamp(20px,6vw,80px);
+}
+.logo{
+  font-family:"Cormorant Garamond",serif;
+  font-size:29px;
+  letter-spacing:4px;
+}
+.logo span{color:var(--gold)}
+.top-note{
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--muted);
+}
+.hero{
+  min-height:100svh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:35px;
+  padding:110px clamp(22px,8vw,115px) 75px;
+  background:
+    radial-gradient(ellipse at 78% 42%,#e9dbca 0%,transparent 39%),
+    var(--bg);
+  position:relative;
+  overflow:hidden;
+}
+.hero-copy{max-width:530px;position:relative;z-index:1}
+.eyebrow{
+  font-size:10px;
+  letter-spacing:4px;
+  color:var(--gold);
+  margin-bottom:24px;
+}
+.hero h1{
+  font-weight:300;
+  font-size:clamp(37px,5vw,67px);
+  line-height:1.5;
+  margin:0;
+}
+.hero h1 em{
+  font-family:"Cormorant Garamond",serif;
+  font-weight:300;
+  font-size:1.4em;
+  color:var(--gold);
+  display:block;
+  line-height:1.05;
+}
+.hero-text{
+  font-size:14px;
+  line-height:2.1;
+  color:var(--muted);
+  max-width:390px;
+  margin:25px 0;
+}
+.primary-btn{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:16px;
+  border:1px solid var(--dark);
+  background:var(--dark);
+  color:white;
+  padding:15px 23px;
+  font-size:12px;
+  transition:.3s;
+}
+.primary-btn:hover{background:transparent;color:var(--dark)}
+.primary-btn .arrow{font-size:18px}
+.text-link{
+  display:inline-block;
+  font-size:12px;
+  color:var(--muted);
+  margin-left:19px;
+  border-bottom:1px solid var(--line);
+  padding-bottom:4px;
+}
+.hero-meta{
+  margin-top:45px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:1px;
+}
+.hero-meta::before{content:"";width:36px;height:1px;background:var(--gold)}
+
+.art-stage{
+  position:relative;
+  min-height:490px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  animation:rise 1.1s ease both;
+}
+.art-glow{
+  position:absolute;
+  width:85%;
+  aspect-ratio:1;
+  border-radius:50%;
+  background:rgba(255,253,248,.5);
+  filter:blur(3px);
+}
+.paper{
+  position:relative;
+  width:min(360px,90%);
+  height:445px;
+  background:#fffdf8;
+  box-shadow:0 30px 65px rgba(82,62,42,.15);
+  transform:rotate(4deg);
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.paper-border{
+  position:absolute;
+  inset:12px;
+  border:1px solid #dfceb8;
+  pointer-events:none;
+}
+.paper-content{
+  text-align:center;
+  width:100%;
+  height:100%;
+  border:1px solid rgba(181,154,112,.25);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:22px 10px;
+}
+.paper-top{
+  font-size:9px;
+  letter-spacing:4px;
+  color:var(--gold);
+}
+.paper-flower{
+  color:var(--gold);
+  font-size:25px;
+  margin:24px 0 13px;
+}
+.paper-names{
+  font-family:"Cormorant Garamond",serif;
+  font-size:48px;
+  font-weight:400;
+  line-height:1.1;
+}
+.paper-and{
+  font-size:25px;
+  font-style:italic;
+  color:var(--gold);
+  margin:8px 0;
+}
+.paper-invite{
+  font-size:10px;
+  color:var(--muted);
+  line-height:2;
+  margin:24px 0;
+}
+.paper-date{
+  font-family:"Cormorant Garamond",serif;
+  font-size:23px;
+  letter-spacing:3px;
+}
+.paper-bottom{
+  font-size:8px;
+  letter-spacing:3px;
+  color:var(--gold);
+  margin-top:12px;
+}
+.wax-seal{
+  position:absolute;
+  bottom:24px;
+  left:50%;
+  transform:translateX(-50%);
+  width:65px;height:65px;
+  border-radius:50%;
+  background:radial-gradient(circle at 33% 25%,#d7c19b,#a4865c 68%,#806746);
+  color:#fff4df;
+  box-shadow:0 5px 12px rgba(72,51,31,.2),inset 0 0 0 2px rgba(255,255,255,.25);
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Cormorant Garamond",serif;
+  font-size:22px;
+  z-index:3;
+}
+.leaf{
+  position:absolute;
+  color:#ad9a7c;
+  opacity:.7;
+  font-size:45px;
+}
+.leaf.one{top:10%;right:1%;transform:rotate(35deg)}
+.leaf.two{bottom:10%;left:0;transform:rotate(-25deg)}
+.floating-note{
+  position:absolute;
+  bottom:48px;
+  right:-3px;
+  padding:14px 19px;
+  background:rgba(255,253,248,.93);
+  box-shadow:0 12px 30px #55473d12;
+  font-size:10px;
+  letter-spacing:1px;
+  transform:rotate(-3deg);
+}
+.floating-note strong{
+  display:block;
+  font-family:"Cormorant Garamond",serif;
+  font-size:23px;
+  font-weight:400;
+  letter-spacing:2px;
+  margin-top:4px;
+}
+
+.section{
+  padding:100px 22px;
+}
+.section-inner{max-width:1050px;margin:auto}
+.center{text-align:center}
+.kicker{
+  font-size:10px;
+  color:var(--gold);
+  letter-spacing:4px;
+  margin-bottom:17px;
+}
+.section-title{
+  font-size:clamp(28px,4vw,43px);
+  font-weight:400;
+  line-height:1.5;
+  margin:0;
+}
+.section-sub{
+  color:var(--muted);
+  font-size:13px;
+  line-height:2;
+  max-width:520px;
+  margin:17px auto 0;
+}
+.divider{
+  color:var(--gold);
+  letter-spacing:8px;
+  margin:25px 0;
+}
+.experience{
+  background:var(--paper);
+}
+.steps{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:55px;
+}
+.step{
+  text-align:center;
+  padding:34px 23px;
+  border:1px solid var(--line);
+  transition:transform .35s,background .35s;
+}
+.step:hover{transform:translateY(-6px);background:#faf5ee}
+.step-number{
+  font-family:"Cormorant Garamond",serif;
+  font-size:38px;
+  color:var(--gold);
+}
+.step h3{font-weight:400;font-size:17px;margin:15px 0}
+.step p{font-size:12px;color:var(--muted);line-height:2;margin:0}
+
+.preview{
+  background:#eee5da;
+}
+.preview-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:70px;
+}
+.preview-copy{max-width:440px}
+.preview-copy p{
+  font-size:13px;line-height:2.1;color:var(--muted);
+}
+.preview-list{
+  list-style:none;
+  padding:0;
+  margin:26px 0;
+}
+.preview-list li{
+  padding:13px 0;
+  border-bottom:1px solid #d9cbbb;
+  font-size:13px;
+  display:flex;
+  align-items:center;
+  gap:13px;
+}
+.preview-list li::before{content:"✧";color:var(--gold)}
+.mini-invitation{
+  max-width:360px;
+  margin:auto;
+  background:var(--paper);
+  padding:14px;
+  box-shadow:0 25px 55px #5d49351c;
+  transform:rotate(-2deg);
+}
+.mini-inner{
+  border:1px solid var(--line);
+  min-height:400px;
+  text-align:center;
+  padding:35px 15px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+.mini-label{font-size:9px;letter-spacing:3px;color:var(--gold)}
+.mini-title{
+  font-family:"Cormorant Garamond",serif;
+  font-size:43px;
+  margin:24px 0 10px;
+  font-weight:400;
+}
+.mini-line{width:60px;height:1px;background:var(--gold);margin:15px 0}
+.mini-copy{font-size:11px;line-height:2;color:var(--muted);max-width:230px}
+.mini-date{font-family:"Cormorant Garamond",serif;font-size:25px;letter-spacing:4px;margin-top:27px}
+.mini-ornament{font-size:24px;color:var(--gold);margin:18px 0}
+
+.features{
+  background:var(--bg);
+}
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin-top:45px;
+}
+.feature{
+  padding:24px 17px;
+  border-top:1px solid var(--line);
+}
+.feature-icon{font-size:24px;color:var(--gold)}
+.feature h3{font-size:15px;font-weight:400;margin:17px 0 9px}
+.feature p{font-size:11px;line-height:2;color:var(--muted);margin:0}
+
+.cta{
+  background:var(--dark);
+  color:#fff8ef;
+  padding:100px 22px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.cta::before,.cta::after{
+  content:"✧";
+  position:absolute;
+  color:var(--gold);
+  opacity:.5;
+  font-size:100px;
+}
+.cta::before{left:8%;top:15%}
+.cta::after{right:8%;bottom:10%}
+.cta .kicker{color:#d0b58d}
+.cta .section-title{max-width:650px;margin:auto}
+.cta p{
+  font-size:13px;
+  color:#d5c6b8;
+  line-height:2;
+  max-width:460px;
+  margin:20px auto 30px;
+}
+.cta .primary-btn{
+  color:var(--dark);
+  background:#e5d3b9;
+  border-color:#e5d3b9;
+}
+.cta .primary-btn:hover{
+  color:#fff8ef;
+  background:transparent;
+}
+.footer{
+  background:var(--dark);
+  color:#d7c9ba;
+  text-align:center;
+  padding:0 20px 35px;
+}
+.footer-logo{
+  font-family:"Cormorant Garamond",serif;
+  font-size:26px;
+  letter-spacing:5px;
+}
+.footer-logo span{color:var(--gold)}
+.footer p{font-size:10px;letter-spacing:1px;margin:12px 0 0}
+
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@keyframes rise{
+  from{opacity:0;transform:translateY(25px) rotate(0)}
+  to{opacity:1;transform:translateY(0) rotate(0)}
+}
+
+@media(max-width:800px){
+  .hero{
+    grid-template-columns:1fr;
+    padding-top:120px;
+    gap:10px;
+  }
+  .hero-copy{text-align:center;margin:auto}
+  .hero-text{margin-left:auto;margin-right:auto}
+  .hero-meta{justify-content:center}
+  .art-stage{min-height:440px;margin-top:5px}
+  .paper{height:390px;width:min(310px,85%)}
+  .paper-names{font-size:42px}
+  .floating-note{right:0;bottom:25px}
+  .preview-layout{grid-template-columns:1fr;gap:50px}
+  .preview-copy{margin:auto;text-align:center}
+  .preview-list{text-align:left}
+  .feature-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;max-width:450px;margin:40px auto 0}
+  .section{padding:75px 20px}
+  .cta::before{left:-20px}
+  .cta::after{right:-20px}
+}
+@media(max-width:420px){
+  .topbar{padding:18px}
+  .logo{font-size:25px}
+  .top-note{font-size:8px;letter-spacing:1px}
+  .hero h1{font-size:38px}
+  .hero .text-link{margin-left:10px}
+  .art-stage{min-height:390px}
+  .paper{height:350px}
+  .paper-names{font-size:39px}
+  .wax-seal{width:57px;height:57px;bottom:19px}
+  .floating-note{bottom:12px;font-size:9px;padding:10px}
+  .feature-grid{gap:10px}
+  .feature{padding:20px 10px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="logo" href="#" aria-label="Evento">EVENT<span>O</span></a>
+  <div class="top-note">DIGITAL WEDDING INVITATIONS</div>
+</header>
+
 <main>
-<section class="hero" id="home"><div class="hero-bg"></div><div class="petal" aria-hidden="true"></div><div class="hero-content"><div class="eyebrow">With love　—　</div><h1>Narek & Anna</h1><p>«Երբ երկու սիրտ գտնում են միմյանց, աշխարհը դառնում է մի փոքր ավելի գեղեցիկ, իսկ սովորական օրերը՝ հավերժ հիշվող պատմություն»։</p><div class="date">06 · 06 · 2027</div><a class="button" href="#details">Հրավիրատոմս ♡</a></div><div class="hero-note">Together<br>Forever ♡</div><a class="scroll" href="#story">↓</a></section>
-<section class="section story-section" id="story"><div class="inner story"><div><div class="kicker">Our story</div><h2>Մեր պատմությունը...</h2><p>Կան հանդիպումներ, որոնք պատահական չեն լինում։ Կան հայացքներ, որոնց մեջ գտնում ես քո ամբողջ աշխարհը, և կան զգացմունքներ, որոնք կամաց-կամաց դառնում են մի ամբողջ կյանք։</p><p>Մեր պատմությունը հասել է մի գեղեցիկ էջի, և մենք ուզում ենք այդ էջը սկսել ձեզ հետ՝ մեր սիրելի մարդկանց ներկայությամբ։</p><div class="ornament">──────── ♥ ────────</div></div><div class="story-art"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=85" alt="Զույգի լուսանկար"><span class="flower" aria-hidden="true"></span><span class="hand-note">Better<br>together ♡</span></div></div></section>
-<div class="divider"></div>
-<section class="section schedule" id="details"><div class="inner schedule-layout"><div><div class="kicker">The big day</div><h2>Օրվա ծրագիրը</h2><div class="timeline"><div class="event"><div class="icon">♧</div><div class="time">10:00</div><h3>Հարսի տուն</h3><p>Տոնական օրվա սկիզբը</p></div><div class="event"><div class="icon">♙</div><div class="time">13:00</div><h3>Պսակադրություն</h3><p>Մեր սիրո խոստումը</p></div><div class="event"><div class="icon">♧</div><div class="time">17:00</div><h3>Հարսանեկան երեկո</h3><p>Երաժշտություն, պար և ուրախություն</p></div></div></div><div class="schedule-photo"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=85" alt="Հարսանեկան ձևավորում"></div></div></section>
-<div class="divider"></div>
-<section class="section dress"><div class="inner dress" style="padding:0"><div class="dress-quote">«Սերը կատարյալ մարդ գտնելը չէ։ Սերը մեկին գտնելն է, ում կողքին ամեն օր ուզում ես նորից ընտրել միմյանց»։<div class="ornament">— ♡ —</div></div><div><div class="kicker">Dress code</div><h2>Գույներ՝ ձեր տրամադրությամբ</h2><p>Մենք հրաժարվել ենք խիստ դրես-կոդից և չենք սահմանափակում ձեզ որոշակի գույներով կամ ոճով։ Ընտրեք հագուստ, որում ձեզ գեղեցիկ ու հարմարավետ կզգաք։ Միակ խնդրանքը՝ խնդրում ենք աղջիկներին զերծ մնալ սպիտակ զգեստներից, որպեսզի այդ գույնը մնա բացառապես հարսիկինը։</p><div class="swatches"><span class="swatch" style="background:#c9bdd0"></span><span class="swatch" style="background:#e5c8c1"></span><span class="swatch" style="background:#e6d3bf"></span><span class="swatch" style="background:#a9b09a"></span><span class="swatch" style="background:#9eb7c5"></span></div></div></div></section>
-<div class="divider"></div>
-<section class="section" id="gallery"><div class="inner gallery-row"><div><div class="kicker">Gallery</div><h2>Մեր հիշողությունները</h2><p class="story-copy">Մի քանի պահ՝ մեր պատմությունից...</p></div><div><div class="gallery"><a href="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85" target="_blank"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80" alt="Լուսանկար 1"></a><a href="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=85" target="_blank"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=500&q=80" alt="Լուսանկար 2"></a><a href="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85" target="_blank"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=500&q=80" alt="Լուսանկար 3"></a></div><div class="gallery-count">01 / 03　 ─────</div></div></div></section>
-<section class="section rsvp" id="rsvp"><div class="inner rsvp-inner"><div><div class="kicker">RSVP</div><h2>Կհանդիպենք շուտով...</h2><p>Մեր երջանկությունը լիարժեք կլինի, երբ այն կիսենք ձեզ հետ։ Սիրով սպասում ենք ձեզ՝ մեր կարևոր օրը միասին նշելու և գեղեցիկ հիշողություններ ստեղծելու։</p><a class="button" href="https://wa.me/37400000000?text=Սիրով%20հաստատում%20եմ%20մասնակցությունս" target="_blank" rel="noopener">♡ Հաստատել մասնակցությունը</a></div><div class="script" style="font-size:36px;text-align:center;color:#735b53">See you<br>soon... ♡</div></div></section>
-</main><footer>Made with love ♡</footer><audio id="music" src="music.mp3" loop></audio><button class="music" id="musicBtn" title="Երաժշտություն" aria-label="Միացնել երաժշտությունը">♫</button>
-<script>const audio=document.getElementById('music'),btn=document.getElementById('musicBtn');btn.addEventListener('click',async()=>{try{if(audio.paused){await audio.play();btn.classList.add('playing');btn.textContent='Ⅱ'}else{audio.pause();btn.classList.remove('playing');btn.textContent='♫'}}catch(e){alert('Երաժշտությունը միացնելու համար ավելացրու music.mp3 ֆայլը index.html-ի կողքին։')}});</script>
-</body></html>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">ԱՆՀԱՏԱԿԱՆ · ՆՈՐԱՁԵՎ · ՀԻՇԱՐԺԱՆ</div>
+
+      <h1>
+        Սերը՝
+        <em>թվային արվեստի</em>
+        տեսքով
+      </h1>
+
+      <p class="hero-text">
+        Հարսանյաց հրավիրատոմս, որը պարզապես հրավեր չէ։
+        Այն ձեր գեղեցիկ պատմության առաջին էջն է՝ ստեղծված
+        մանրուքների հանդեպ սիրով։
+      </p>
+
+      <a href="#order" class="primary-btn">
+        Պատվիրել հրավիրատոմս <span class="arrow">↗</span>
+      </a>
+
+      <a href="#design" class="text-link">Բացահայտել դիզայնը</a>
+
+      <div class="hero-meta">ՍՏԵՂԾՎԱԾ Է ՍԻՐՈՎ · EVENTO</div>
+    </div>
+
+    <div class="art-stage" aria-label="Հարսանյաց հրավիրատոմսի դիզայնի օրինակ">
+      <div class="art-glow"></div>
+      <div class="leaf one">❧</div>
+      <div class="leaf two">❦</div>
+
+      <div class="paper">
+        <div class="paper-border"></div>
+        <div class="paper-content">
+          <div class="paper-top">SAVE OUR DATE</div>
+          <div class="paper-flower">✧</div>
+          <div class="paper-names">Anna</div>
+          <div class="paper-and">&</div>
+          <div class="paper-names">David</div>
+          <div class="paper-invite">
+            Սիրով հրավիրում ենք Ձեզ<br>
+            կիսելու մեր երջանկությունը
+          </div>
+          <div class="paper-date">07 · 11 · 2026</div>
+          <div class="paper-bottom">OUR WEDDING DAY</div>
+        </div>
+        <div class="wax-seal">A & D</div>
+      </div>
+
+      <div class="floating-note">
+        Ձեր պատմությունը՝
+        <strong>ձեր ոճով</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section experience" id="design">
+    <div class="section-inner center reveal">
+      <div class="kicker">ԱՎԵԼԻՆ, ՔԱՆ ՀՐԱՎԵՐ</div>
+      <h2 class="section-title">Առաջին տպավորությունը<br>սկսվում է այստեղից</h2>
+      <p class="section-sub">
+        Յուրաքանչյուր մանրուք մտածված է, որպեսզի հյուրերը
+        դեռ հարսանիքից առաջ զգան ձեր օրվա գեղեցկությունը։
+      </p>
+      <div class="divider">✧ ❦ ✧</div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">01</div>
+          <h3>Գեղեցիկ բացում</h3>
+          <p>Նուրբ անիմացիա և ծրար, որը հրավիրատոմսը դարձնում է փոքրիկ անակնկալ։</p>
+        </article>
+        <article class="step">
+          <div class="step-number">02</div>
+          <h3>Ձեր պատմությունը</h3>
+          <p>Անուններ, ամսաթիվ, վայրեր և գույներ՝ ընտրված հենց ձեր նախասիրությամբ։</p>
+        </article>
+        <article class="step">
+          <div class="step-number">03</div>
+          <h3>Հիշարժան պահեր</h3>
+          <p>Երաժշտություն, քարտեզներ և մասնակցության հաստատում՝ մեկ էջում։</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section preview">
+    <div class="section-inner preview-layout">
+      <div class="preview-copy reveal">
+        <div class="kicker">ՁԵՐ ՕՐԸ · ՁԵՐ ԿԱՆՈՆՆԵՐԸ</div>
+        <h2 class="section-title">Յուրաքանչյուր մանրուք՝ ձեր ընտրությամբ</h2>
+        <p>
+          Ընտրեք ձեր նախընտրած ոճը, գույները, տառատեսակները
+          և երաժշտությունը։ Մենք կստեղծենք հրավիրատոմս, որը
+          կարտահայտի հենց ձեր զույգի բնավորությունը։
+        </p>
+
+        <ul class="preview-list">
+          <li>Անհատական անուններ և ամսաթիվ</li>
+          <li>Հարսանյաց վայրերի քարտեզներ</li>
+          <li>Երաժշտություն և նուրբ անիմացիաներ</li>
+          <li>Հեռախոսների համար հարմար դիզայն</li>
+        </ul>
+
+        <a href="#order" class="primary-btn">
+          Ստեղծել իմ հրավերը <span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="mini-invitation reveal">
+        <div class="mini-inner">
+          <div class="mini-label">THE BEGINNING OF FOREVER</div>
+          <div class="mini-ornament">❦</div>
+          <div class="mini-title">Anna<br>& David</div>
+          <div class="mini-line"></div>
+          <div class="mini-copy">
+            Երկու սիրտ, մեկ պատմություն<br>
+            և մի օր, որը կմնա հիշողության մեջ։
+          </div>
+          <div class="mini-date">07 · 11 · 2026</div>
+          <div class="mini-ornament">✧</div>
+          <div class="mini-label">WITH LOVE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section features">
+    <div class="section-inner center reveal">
+      <div class="kicker">ՄԵՐ ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐԸ</div>
+      <h2 class="section-title">Ամեն ինչ՝ մեկ հղման մեջ</h2>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-icon">♡</div>
+          <h3>Անհատական դիզայն</h3>
+          <p>Ստեղծված ձեր ցանկություններին համապատասխան։</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">✧</div>
+          <h3>Նուրբ անիմացիաներ</h3>
+          <p>Շարժում և գեղեցիկ անցումներ՝ առանց ավելորդության։</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">⌖</div>
+          <h3>Հեշտ կողմնորոշում</h3>
+          <p>Հյուրերը կարող են բացել վայրերի քարտեզները։</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon">♫</div>
+          <h3>Երաժշտություն</h3>
+          <p>Ձեր ընտրած մեղեդին՝ հրավիրատոմսի տրամադրությամբ։</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="order">
+    <div class="reveal">
+      <div class="kicker">ՔՈ ՊԱՏՄՈՒԹՅՈՒՆԸ ՍԿՍՎՈՒՄ Է ԱՅՍՏԵՂ</div>
+      <h2 class="section-title">Ստեղծե՞նք ձեր երազանքի հրավիրատոմսը</h2>
+      <p>
+        Ուղարկեք մեզ ձեր պատկերացումները, և միասին կստեղծենք
+        ձեր հարսանիքին համապատասխան թվային հրավիրատոմս։
+      </p>
+
+      <!-- Փոխարինեք հղումը ձեր Instagram-ի իրական հղումով -->
+      <a class="primary-btn"
+         href="https://www.instagram.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Պատվիրել Instagram-ով <span class="arrow">↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-logo">EVENT<span>O</span></div>
+  <p>ԹՎԱՅԻՆ ՀՐԱՎԻՐԱՏՈՄՍԵՐ՝ ՍՏԵՂԾՎԱԾ ՍԻՐՈՎ</p>
+</footer>
+
+<script>
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(element => {
+  revealObserver.observe(element);
+});
+</script>
+
+</body>
+</html>
